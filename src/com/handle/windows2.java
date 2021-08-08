@@ -7,9 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Windows {
+public class windows2 {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Automation\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
@@ -24,6 +24,9 @@ public class Windows {
 		
 		driver.switchTo().window(childrenId);
 		System.out.println(driver.findElement(By.cssSelector(".im-para.red")).getText());
+		driver.findElement(By.cssSelector(".im-para.red")).getText();
+		String email = driver.findElement(By.cssSelector(".im-para.red")).getText().split("at")[1].trim().split(" ")[0];
+		
 	}
 
 }
