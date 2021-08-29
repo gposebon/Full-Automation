@@ -13,12 +13,12 @@ import org.testng.Assert;
 
 public class tableStream {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\Automation\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
-		
+		Thread.sleep(2000);
 		//Click on the column
 		driver.findElement(By.xpath("//tr/th[1]")).click();
 		//Captura all webelements on the list
@@ -30,8 +30,17 @@ public class tableStream {
 		// compare first list whit sorted list
 		Assert.assertTrue(listaOriginal.equals(listaSorted));
 		
+		List<String> price = listaUno.stream().filter(producto -> producto.getText().contains("Beans"))
+				.map(producto -> getPriceVeggie(producto)).collect(Collectors.toList());
 		
+		
+		price.forEach(priceProduct -> System.out.println(priceProduct));
+	}
 
+	private static String getPriceVeggie(WebElement producto) {
+		// TODO Auto-generated method stub
+		String precioProducto = producto.findElement(By.xpath("following-sibling::td[1]")).getText();
+		return precioProducto;
 	}
 
 }
