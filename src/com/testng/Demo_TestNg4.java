@@ -9,7 +9,7 @@ public class Demo_TestNg4 {
 		System.out.println("Test Web de paco");
 	}
 	
-	@Test
+	@Test(groups={"smoke"})
 	public void testCelular() {
 		System.out.println("Test Celular de paco");
 	}

@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="2" failed="0" skipped="0">
+<testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-29T04:42:41Z" name="Default suite" finished-at="2021-08-29T04:42:41Z" duration-ms="41">
+  <suite started-at="2021-09-05T05:14:36Z" name="Suite" finished-at="2021-09-05T05:14:36Z" duration-ms="34">
     <groups>
+      <group name="smoke">
+        <method signature="Demo_TestNg2.test3()[pri:0, instance:com.testng.Demo_TestNg2@6c0d7c83]" name="test3" class="com.testng.Demo_TestNg2"/>
+        <method signature="Demo_TestNg3.testCelular3()[pri:0, instance:com.testng.Demo_TestNg3@48d61b48]" name="testCelular3" class="com.testng.Demo_TestNg3"/>
+        <method signature="Demo_TestNg4.testCelular()[pri:0, instance:com.testng.Demo_TestNg4@14f9390f]" name="testCelular" class="com.testng.Demo_TestNg4"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2021-08-29T04:42:41Z" name="Default test" finished-at="2021-08-29T04:42:41Z" duration-ms="41">
-      <class name="com.javapuro.Map_Java">
-        <test-method signature="mapTest()[pri:0, instance:com.javapuro.Map_Java@7357a011]" started-at="2021-08-29T01:42:41Z" name="mapTest" finished-at="2021-08-29T01:42:41Z" duration-ms="17" status="PASS">
+    <test started-at="2021-09-05T05:14:36Z" name="Regression" finished-at="2021-09-05T05:14:36Z" duration-ms="34">
+      <class name="com.testng.Demo_TestNg3">
+        <test-method signature="testCelular3()[pri:0, instance:com.testng.Demo_TestNg3@48d61b48]" started-at="2021-09-05T02:14:36Z" name="testCelular3" finished-at="2021-09-05T02:14:36Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mapTest -->
-        <test-method signature="streamCollect()[pri:0, instance:com.javapuro.Map_Java@7357a011]" started-at="2021-08-29T01:42:41Z" name="streamCollect" finished-at="2021-08-29T01:42:41Z" duration-ms="6" status="PASS">
+        </test-method> <!-- testCelular3 -->
+      </class> <!-- com.testng.Demo_TestNg3 -->
+      <class name="com.testng.Demo_TestNg4">
+        <test-method signature="testCelular()[pri:0, instance:com.testng.Demo_TestNg4@14f9390f]" started-at="2021-09-05T02:14:36Z" name="testCelular" finished-at="2021-09-05T02:14:36Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- streamCollect -->
-      </class> <!-- com.javapuro.Map_Java -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testCelular -->
+      </class> <!-- com.testng.Demo_TestNg4 -->
+      <class name="com.testng.Demo_TestNg2">
+        <test-method signature="test3()[pri:0, instance:com.testng.Demo_TestNg2@6c0d7c83]" started-at="2021-09-05T02:14:36Z" name="test3" finished-at="2021-09-05T02:14:36Z" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- com.testng.Demo_TestNg2 -->
+    </test> <!-- Regression -->
+  </suite> <!-- Suite -->
 </testng-results>
