@@ -1,34 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-05T05:14:36Z" name="Suite" finished-at="2021-09-05T05:14:36Z" duration-ms="34">
+  <suite name="Suite" duration-ms="121" started-at="2021-09-14T22:58:07Z" finished-at="2021-09-14T22:58:07Z">
     <groups>
       <group name="smoke">
-        <method signature="Demo_TestNg2.test3()[pri:0, instance:com.testng.Demo_TestNg2@6c0d7c83]" name="test3" class="com.testng.Demo_TestNg2"/>
-        <method signature="Demo_TestNg3.testCelular3()[pri:0, instance:com.testng.Demo_TestNg3@48d61b48]" name="testCelular3" class="com.testng.Demo_TestNg3"/>
-        <method signature="Demo_TestNg4.testCelular()[pri:0, instance:com.testng.Demo_TestNg4@14f9390f]" name="testCelular" class="com.testng.Demo_TestNg4"/>
+        <method signature="Demo_TestNg2.test3()[pri:0, instance:com.testng.Demo_TestNg2@233fe9b6]" name="test3" class="com.testng.Demo_TestNg2"/>
+        <method signature="Demo_TestNg4.testCelular()[pri:0, instance:com.testng.Demo_TestNg4@45018215]" name="testCelular" class="com.testng.Demo_TestNg4"/>
+        <method signature="Demo_TestNg3.testCelular3()[pri:0, instance:com.testng.Demo_TestNg3@318ba8c8]" name="testCelular3" class="com.testng.Demo_TestNg3"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2021-09-05T05:14:36Z" name="Regression" finished-at="2021-09-05T05:14:36Z" duration-ms="34">
-      <class name="com.testng.Demo_TestNg3">
-        <test-method signature="testCelular3()[pri:0, instance:com.testng.Demo_TestNg3@48d61b48]" started-at="2021-09-05T02:14:36Z" name="testCelular3" finished-at="2021-09-05T02:14:36Z" duration-ms="2" status="PASS">
+    <test name="Test" duration-ms="43" started-at="2021-09-14T22:58:07Z" finished-at="2021-09-14T22:58:07Z">
+      <class name="com.testng.Demo_TestNg4">
+        <test-method status="PASS" signature="testAPI()[pri:0, instance:com.testng.Demo_TestNg4@45018215]" name="testAPI" duration-ms="2" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCelular3 -->
-      </class> <!-- com.testng.Demo_TestNg3 -->
-      <class name="com.testng.Demo_TestNg4">
-        <test-method signature="testCelular()[pri:0, instance:com.testng.Demo_TestNg4@14f9390f]" started-at="2021-09-05T02:14:36Z" name="testCelular" finished-at="2021-09-05T02:14:36Z" duration-ms="2" status="PASS">
+        </test-method> <!-- testAPI -->
+        <test-method status="PASS" signature="testCelular()[pri:0, instance:com.testng.Demo_TestNg4@45018215]" name="testCelular" duration-ms="2" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCelular -->
+        <test-method status="PASS" signature="testWeb()[pri:0, instance:com.testng.Demo_TestNg4@45018215]" name="testWeb" duration-ms="1" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWeb -->
       </class> <!-- com.testng.Demo_TestNg4 -->
       <class name="com.testng.Demo_TestNg2">
-        <test-method signature="test3()[pri:0, instance:com.testng.Demo_TestNg2@6c0d7c83]" started-at="2021-09-05T02:14:36Z" name="test3" finished-at="2021-09-05T02:14:36Z" duration-ms="10" status="PASS">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.testng.Demo_TestNg2@233fe9b6]" name="beforeTest" is-config="true" duration-ms="0" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testng.Demo_TestNg2@233fe9b6]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.testng.Demo_TestNg2@233fe9b6]" name="test3" duration-ms="3" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.testng.Demo_TestNg2@233fe9b6]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- com.testng.Demo_TestNg2 -->
-    </test> <!-- Regression -->
+      <class name="com.testng.Demo_TestNg">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.testng.Demo_TestNg@7219ec67]" name="test1" duration-ms="6" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.testng.Demo_TestNg@7219ec67]" name="test2" duration-ms="2" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.testng.Demo_TestNg@7219ec67]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.testng.Demo_TestNg -->
+    </test> <!-- Test -->
+    <test name="Test2" duration-ms="14" started-at="2021-09-14T22:58:07Z" finished-at="2021-09-14T22:58:07Z">
+      <class name="com.testng.Demo_TestNg3">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.testng.Demo_TestNg3@318ba8c8]" name="beforeClass" is-config="true" duration-ms="1" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testCelular2()[pri:0, instance:com.testng.Demo_TestNg3@318ba8c8]" name="testCelular2" duration-ms="2" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCelular2 -->
+        <test-method status="PASS" signature="testCelular3()[pri:0, instance:com.testng.Demo_TestNg3@318ba8c8]" name="testCelular3" duration-ms="5" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCelular3 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.testng.Demo_TestNg3@318ba8c8]" name="afterClass" is-config="true" duration-ms="1" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.testng.Demo_TestNg3 -->
+      <class name="com.testng.Demo_TestNg">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.testng.Demo_TestNg@7219ec67]" name="afterSuite" is-config="true" duration-ms="12" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.testng.Demo_TestNg@7219ec67]" name="beforeSuite" is-config="true" duration-ms="1" started-at="2021-09-14T19:58:07Z" finished-at="2021-09-14T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+      </class> <!-- com.testng.Demo_TestNg -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>
